@@ -14,6 +14,7 @@ import AdminArticles from "./pages/admin/AdminArticles";
 import AdminOffers from "./pages/admin/AdminOffers";
 import AdminWebhooks from "./pages/admin/AdminWebhooks";
 import AdminCommunication from "./pages/admin/AdminCommunication";
+import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/auth" element={<Auth />} />
           
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminLayout />}>
