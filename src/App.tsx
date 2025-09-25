@@ -11,6 +11,9 @@ import AdminUsers from "./pages/admin/AdminUsers";
 import AdminCourses from "./pages/admin/AdminCourses";
 import AdminSettings from "./pages/admin/AdminSettings";
 import AdminArticles from "./pages/admin/AdminArticles";
+import AdminOffers from "./pages/admin/AdminOffers";
+import AdminWebhooks from "./pages/admin/AdminWebhooks";
+import AdminCommunication from "./pages/admin/AdminCommunication";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +32,9 @@ const App = () => (
             <Route path="users" element={<AdminUsers />} />
             <Route path="courses" element={<AdminCourses />} />
             <Route path="articles" element={<AdminArticles />} />
+            <Route path="offers" element={<AdminOffers />} />
+            <Route path="webhooks" element={<AdminWebhooks />} />
+            <Route path="communication" element={<AdminCommunication />} />
             <Route path="settings" element={<AdminSettings />} />
           </Route>
           
